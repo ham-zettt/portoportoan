@@ -1,0 +1,167 @@
+:root {
+    --bg-top-gradient: rgb(218, 218, 255);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid black; */
+}
+
+.navbar {
+    background-color: var(--bg-top-gradient) ;
+}
+
+main {
+    background-color: #ffe5ed;
+    background-image: linear-gradient(0deg, #ffe5ed 0%, var(--bg-top-gradient) 100%);
+}
+
+.home-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text {
+    color: black;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.home-head {
+    color: #141E46 ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.rainbow-text {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #ef5350, #925167, #7e57c2, #186cb0, #26c6da, #43a047, #7cc32a, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.button {
+    font-family: "Poppins";
+    display: inline-block;
+    padding: 0.60rem 1.15rem;
+    border: none;
+    border-radius: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(81, 145, 222);
+    border-radius: 10rem;
+    z-index: -2;
+}
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #007587, #004187);
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+.button:hover {
+    color: #fff;
+}
+.button:hover:before {
+    width: 100%;
+}
+
+
+.user-image {
+    width: 250px; 
+}
+
+.portofolio-bg {
+    padding: 50px 50px;
+}
+
+.porto-logo {
+    border-radius: 20px 20px 0 0;
+}
+
+.porto-info {
+    padding: 20px;
+    border-top: 0.5px solid black;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+  .footer-text {
+    font-family: "Lato";
+    font-size: small;
+  }
+
+
+.radio {
+    justify-content: center;
+    margin: auto;
+	padding: 4px;
+	border-radius: 3px;
+	position: relative;
+}
+
+.radio input {
+	width: auto;
+	height: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 4px 8px;
+	background: white;
+	color: #141E46;
+	font-size: 15px;
+	font-family: "Lato";
+	transition: all 100ms linear;
+}
+
+.radio input:checked {
+	background-image: linear-gradient(180deg, #007587, #004187);
+	color: #fff;
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #79485f7a;
+}
+
+.radio input:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.radio input:hover {
+    background-color: rgb(169, 194, 220);
+}
